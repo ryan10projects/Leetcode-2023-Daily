@@ -12,7 +12,7 @@ class Solution {
 			if (map.containsKey(array[i])) {
 				//comparing if the character in pattern is same as the value in the HashMap
 				if (pattern.charAt(i) != map.get(array[i])) {
-					System.out.println(array[i]);
+					
 					return false;
 				}
 			}

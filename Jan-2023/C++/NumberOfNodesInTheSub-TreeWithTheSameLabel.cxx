@@ -1,4 +1,4 @@
-//passed 57/59 test cases for this one
+//Same solution worked in java but passed 57/59 test cases for this one due to time limit exceeded error
 //1519. Number of Nodes in the Sub-Tree With the Same Label
 class Solution {
 public:

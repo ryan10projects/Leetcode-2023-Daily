@@ -8,7 +8,7 @@ Step 5: Return Count
 If remainder less than 0, add the divisor
 */ 
 
-Java
+
 
 class Solution {
 	public int subarraysDivByK(int[] nums, int k) {

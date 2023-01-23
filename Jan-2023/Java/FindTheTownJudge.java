@@ -1,6 +1,6 @@
-// 
 
-997. Find the Town Judge
+
+// 997. Find the Town Judge
 // Used only one array, if -1, he/she trust someone, so not a candidate for town judge
 
 class Solution {

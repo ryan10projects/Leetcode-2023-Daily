@@ -1,4 +1,5 @@
 // Find All Anagrams in a String
+// Maintain a sliding window, Add elements from fhe front and delete elements from the behind to maintain the same length as p String. Then compare fhem
 //Same as permutation in a string just add the start index
 class Solution {
 	public:

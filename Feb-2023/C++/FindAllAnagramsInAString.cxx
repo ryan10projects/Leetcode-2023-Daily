@@ -1,4 +1,5 @@
 // Find All Anagrams in a String
+//Same as permutation in a string just add the start index
 class Solution {
 	public:
 	vector<int> findAnagrams(string s, string p) {

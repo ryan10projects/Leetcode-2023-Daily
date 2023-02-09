@@ -1,5 +1,7 @@
 // 2306. Naming a Company
 /*Algorithm
+We will compare the suffix only and use the first letter as key.
+If the suffix is not same in both the group, we have found a unique element
 HashSet for better memory searching.
 26 times to not look for the same character twice in case of duplicates.
 multiplying both unique group of elements at the end for unique pairs for each character, we will not add here.

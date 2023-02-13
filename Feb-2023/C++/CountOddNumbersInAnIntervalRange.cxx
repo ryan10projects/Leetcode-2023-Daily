@@ -1,6 +1,8 @@
 // 1523. Count Odd Numbers in an Interval Range
-// Assume half the numbers are odd
-// +1 because to round up for int
+// Half the numbers are  always odd
+// so the difference between  High/2 and low/2 is the answer
+// +1 because while diving to round up an integer
+```
 class Solution {
 public:
     int countOdds(int low, int high) {

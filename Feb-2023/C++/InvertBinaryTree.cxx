@@ -1,6 +1,6 @@
 // 226. Invert Binary Tree
 // Swap left and right nodes
-// recursively call left and right nodes until until
+// recursively call left and right nodes until null
 
 /**
  * Definition for a binary tree node.

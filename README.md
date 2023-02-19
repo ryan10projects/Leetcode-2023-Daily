@@ -1,6 +1,6 @@
 # Leetcode-2023-Daily
 <p align="center">
-<img align=center width=500 height=300 src="https://media.licdn.com/dms/image/C5612AQG7GnrlpoBG9w/article-cover_image-shrink_600_2000/0/1594835668489?e=2147483647&v=beta&t=mF86lNdLR5b2TX-ozWUatJ3PEXVJdB2HuraH3nIr5Ww" />
+<img align=center width=700 height=300 src="https://leetcode.com/static/images/LeetCode_Sharing.png" />
 
 <h2>Welcome to my daily LeetCode repository! Here, you will find my
 solutions to various LeetCode problems that I work on daily. The

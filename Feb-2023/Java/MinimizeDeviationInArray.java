@@ -15,7 +15,7 @@ class Solution {
             int small = set.first();
             int large = set.last();
             diff = Math.min(diff,large-small);
-            //The set still can an even number which is the largest that can be divided 
+            //The set still has an even number which is the largest that can be divided 
             if(large%2==0){
                 set.remove(large);
                 set.add(large/2);

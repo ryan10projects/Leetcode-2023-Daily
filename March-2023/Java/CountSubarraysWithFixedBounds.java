@@ -9,7 +9,9 @@ class Solution {
             if(nums[i]<minK || nums[i]>maxK) badnum=i;
             if(nums[i]==minK) minKpos=i;
             if(nums[i]==maxK) maxKpos=i;
+            // Get the minimum from max and min
             int num = Math.min(minKpos,maxKpos);
+            // If less than 0, no array exist within the window
             long temp = num-badnum;
             ans += temp<=0?0:temp;
          }

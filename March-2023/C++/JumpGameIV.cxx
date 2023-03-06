@@ -69,7 +69,7 @@ public:
                  }
 
                 //third jump condition 
-
+                 // add all the indexes with same values
                 for(int &ind: map[arr[curr]]){
 
                    if(!visited[ind]){

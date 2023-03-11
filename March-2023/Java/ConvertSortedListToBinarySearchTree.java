@@ -24,6 +24,8 @@
  * }
  */
  // 109. Convert Sorted List to Binary Search Tree
+// Since the ListNode are sorted, we find the middle node make it the root and recursively call left and right to make it a balanced bst
+// Starting from the middle will help it make it a balanced bst
 class Solution {
     public TreeNode sortedListToBST(ListNode head) {
         if(head==null) return null;

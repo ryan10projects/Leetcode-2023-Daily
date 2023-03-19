@@ -1,6 +1,6 @@
 
 // 211. Design Add and Search Words Data Structure
-// Learn from trie structure before looking it up
+// Learn trie structure before looking it up
 class WordDictionary {
 public:
     

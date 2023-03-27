@@ -1,16 +1,22 @@
 // 64. Minimum Path Sum
+// 3 steps 
+// Goals
+// Contraints
+// Choice
 class Solution {
 	public:
 	int arr[201][201];
 	//memset(arr,-1,sizeOf(arr));
 	int solve(vector<vector<int>> & grid, int i, int j, int m, int n) {
-		// return the last grid, do not return the prev
+		//Goal
+                 // return the last grid, do not return the prev
 		if (i == m && j == n) {
 			return grid[i][j];
 		}
 		if (arr[i][j] != -1) {
 			return arr[i][j];
 		}
+                // Contraints
 		// if i on the last row, you can move only right
 		if (i == m) {
 			return arr[i][j] = grid[i][j] + solve(grid, i, j + 1, m, n);

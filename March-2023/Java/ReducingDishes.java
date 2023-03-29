@@ -20,6 +20,7 @@ class Solution {
         return arr[index][time]=Math.max(include,exclude);        
     }
     public int maxSatisfaction(int[] satisfaction) {
+       // sort to make sure the element at the end is multiplied with highest time for biggest value
         Arrays.sort(satisfaction);
         for(int[] a: arr){
         Arrays.fill(a,-1);

@@ -1,3 +1,7 @@
+// Scramble Strings
+// Algorithm
+// check if swapped letters or non scrambles are equal if yes return true
+// hashmap for memoization
 class Solution {
 public:
     unordered_map<string, bool> mp;

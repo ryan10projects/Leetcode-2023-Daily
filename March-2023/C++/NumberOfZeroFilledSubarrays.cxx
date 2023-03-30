@@ -1,4 +1,6 @@
 // 2348. Number of Zero-Filled Subarrays
+// Algorithm
+// Get the count of continuous zero then add it in result
 class Solution {
 public:
     long long zeroFilledSubarray(vector<int>& nums) {

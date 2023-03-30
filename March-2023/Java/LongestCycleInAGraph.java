@@ -5,6 +5,7 @@
 // visited array and recusrion array 
 // visited array will keep track of the nodes it visits
 // recursion array will check if its within the cycle loop, if it is -1 means its a dead end and recursion will  be set to false
+// To find the longest cycle, if you visite the same node again. Use the formula : Total nodes - current visited node + 1
 class Solution {
 	int res = -1;
 	public void dfs(int[] edges, int u, boolean[] visited, int[] count, boolean[] recursion) {

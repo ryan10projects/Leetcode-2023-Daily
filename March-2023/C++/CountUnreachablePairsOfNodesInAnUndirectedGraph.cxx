@@ -1,4 +1,8 @@
 // Count Unreachable Pairs of Nodes in an Undirected Graph
+// Algorithm
+// find count of all the nodes in a group
+// formula 
+// count of all nodes in a group * remainingSize (remove duplicate)
 class Solution {
 public:
     

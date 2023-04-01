@@ -1,4 +1,7 @@
-
+// Reorder Routes to Make All Paths Lead to the City Zero
+// Algorithm
+// Add the count of directed nodes starting from 0 only
+// Refer java code too
 class Solution {
 public:
     int count = 0;

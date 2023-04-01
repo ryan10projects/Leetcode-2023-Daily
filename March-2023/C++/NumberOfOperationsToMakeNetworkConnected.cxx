@@ -1,4 +1,5 @@
-
+// Number of Operations to Make Network Connected
+// Dsu
 class Solution {
 public:
     
@@ -8,7 +9,7 @@ public:
     int find (int x) {
         if (x == parent[x]) 
             return x;
-
+       // Optimization 
         return parent[x] = find(parent[x]);
     }
 
@@ -18,7 +19,7 @@ public:
 
         if (x_parent == y_parent) 
             return;
-
+        // To reduce height of tree, we use ranks
         if(rank[x_parent] > rank[y_parent]) {
             parent[y_parent] = x_parent;
         } else if(rank[x_parent] < rank[y_parent]) {
@@ -30,7 +31,7 @@ public:
     }
     
     int makeConnected(int n, vector<vector<int>>& connections) {
-        
+        // Connections are edges, edges will always be one less than the node
         if(connections.size() < n-1)
             return -1;
         
@@ -42,6 +43,7 @@ public:
         
         int components = n;
         for(auto &vec : connections) {
+           // If they don't have same parent, merge and reduce one component/group
             if(find(vec[0]) != find(vec[1])) {
                 components--;
                 Union(vec[0], vec[1]);

@@ -26,13 +26,13 @@ class Node {
 class Solution {
     public Node cloneGraph(Node node) {
         if(node==null) return null;
-        HashMap<Integer,Node> map = new HashMap<>();
+        HashMap<Node,Node> map = new HashMap<>();
         return dfs(map,node);
         }
-       public Node dfs(HashMap<Integer,Node> map, Node n){
-           if(map.containsKey(n.val)) return map.get(n.val);          
+       public Node dfs(HashMap<Node,Node> map, Node n){
+           if(map.containsKey(n)) return map.get(n.val);          
               Node copy = new Node(n);
-              map.put(n.val,copy);
+              map.put(n,copy);
            //map original node as key and vopy as value
               for(Node nei:n.neighbors){
       

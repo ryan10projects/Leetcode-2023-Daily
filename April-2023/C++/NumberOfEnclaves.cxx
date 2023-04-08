@@ -1,4 +1,9 @@
 // 1020. Number of Enclaves
+// 1020. Number of Enclaves
+// Algorithmn
+// Turn all land connected to border to water
+// dfs up, down, left, right
+
 class Solution {
     int count = 0;
 public:

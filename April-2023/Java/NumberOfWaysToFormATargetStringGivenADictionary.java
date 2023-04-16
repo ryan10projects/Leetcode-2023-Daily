@@ -4,7 +4,7 @@ class Solution {
     long[][] freq;
     int n;
     int m;
-    String t;
+    // Return answer with mod 10^9+7 (as per question)
     final int mod = 1000000007;
     
     public int solve(int i, int j, String target) {

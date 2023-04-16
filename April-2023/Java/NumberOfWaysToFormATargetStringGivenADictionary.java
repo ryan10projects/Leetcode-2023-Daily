@@ -15,7 +15,7 @@ class Solution {
         // Choice 1
         int not_taken = solve(i, j+1, target) % mod;
         // Choice 2
-        // Cause frequency is long
+        // Cause frequency is long convert to int after multiplying 
         // Get all the frequency eg A. That will be the number of ways we can choose the same alphabet when looping
         int taken = (int) ((freq[target.charAt(i) - 'a'][j] * solve(i+1, j+1, target)) % mod);
         // Goal

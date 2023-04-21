@@ -1,6 +1,6 @@
 // 879. Profitable Schemes
 // algorithm
-// Pick current group or people or go to next group and pick them, this will be done using taken and not taken, if I reached the end of group length, this means we saw all the possibilities and will return 1 if true and a group satisfies the minProfit condition 
+// Pick current group of people or go to next group and pick them, this will be done using taken and not taken, if I reache the end of group length, this means we saw all the possibilities and will return 1 if true and a group satisfies the minProfit condition 
 class Solution {
     int N;
     int mod = 1000000007;

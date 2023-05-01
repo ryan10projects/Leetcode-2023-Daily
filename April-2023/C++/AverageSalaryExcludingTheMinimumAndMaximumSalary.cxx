@@ -1,7 +1,7 @@
 // 1491. Average Salary Excluding the Minimum and Maximum Salary
 // n*log(n)
-#include <algorithm>
-using namespace std;
+
+
 
 class Solution {
 public:
@@ -16,8 +16,6 @@ return sum / (salary.size() - 2);
 };
 
 // o(n)
-#include <vector>
-#include <climits>
 
 class Solution {
 public:

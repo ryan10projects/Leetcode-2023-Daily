@@ -1,8 +1,5 @@
 // 1491. Average Salary Excluding the Minimum and Maximum Salary
 // n*log(n)
-
-
-
 class Solution {
 public:
 double average(vector<int>& salary) {
@@ -16,7 +13,6 @@ return sum / (salary.size() - 2);
 };
 
 // o(n)
-
 class Solution {
 public:
 double average(vector<int>& salary) {

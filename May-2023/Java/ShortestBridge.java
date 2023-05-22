@@ -1,5 +1,7 @@
 
 // 934. Shortest Bridge
+// first traverse and mark the first island as visied using dfs
+// then use bfs to find nearest 1 using bfs (minimum steps) and return the level 
 class Solution {
     int m, n;
     int[][] directions = {

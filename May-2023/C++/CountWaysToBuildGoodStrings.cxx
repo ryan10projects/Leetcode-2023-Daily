@@ -1,3 +1,12 @@
+//Algorithm 
+
+// Constraint (be within range)
+
+// Choice (add zero or add one)
+
+// Goal (if within range add 1)
+
+// 2466. Count Ways To Build Good Strings
 class Solution {
 public:
     int ans;

@@ -1,4 +1,6 @@
 // 2352. Equal Row and Column Pairs
+// store every value of one row in map as key and assign its count
+// everytime you see the list while traversing through column, get the count of hashmap
 class Solution {
 	public int equalPairs(int[][] grid) {
 		HashMap<List<Integer>, Integer> map = new HashMap<>();

@@ -5,6 +5,7 @@ class Solution {
     for(int[] res: result){
         Arrays.fill(res,-1);
     }
+        //store result of all 0s and traverse from there first to get the nearest answer
     for(int i=0; i<mat.length; i++){
       for(int j=0; j<mat[0].length; j++){
                 if(mat[i][j]==0){
@@ -13,8 +14,9 @@ class Solution {
                 }
            }
         }
+        // traverse in 4 directions
         int[][] directions = {{0,1},{0,-1},{1,0},{-1,0}};
-       
+       // shortest distance automatically cause bfs
         while(!queue.isEmpty()){
             Pair<Integer,Integer> pair = queue.poll();
             int new_i = pair.getKey();

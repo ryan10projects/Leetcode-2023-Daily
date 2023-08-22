@@ -1,0 +1,28 @@
+/* It initializes a `StringBuilder` called `res` to store the resulting column title.
+
+2. The code enters a `while` loop that continues as long as `n` is greater than 0.
+
+3. Inside the loop:
+   - `n` is decremented by 1. This is done because Excel column titles start from 'A' for 1, 'B' for 2, and so on, but the code treats them as 'A' for 0, 'B' for 1, and so on.
+   - The remainder of `n` divided by 26 is calculated, which corresponds to the position of the current character in the column title. The result is converted to a character using ASCII code, where 'A' is represented by 65.
+   - The calculated character is appended to the `res` StringBuilder.
+   - `n` is then divided by 26 to determine the position of the next character.
+
+4. After the loop, the characters in `res` are in reverse order. The `reverse()` method is used to reverse the characters back to the correct order, and then the `toString()` method is called to convert the `StringBuilder` into a String.
+
+5. The resulting String is the Excel column title corresponding to the original input `n`, and it is returned as the output of the `convertToTitle` method.
+
+So, for example, if you call `convertToTitle(28)`, it would return "AB" because the 28th column in Excel corresponds to the title "AB". */
+
+class Solution {
+    public String convertToTitle(int n) {
+        StringBuilder res = new StringBuilder();
+        while(n>0){
+            n--;
+            char a = (char)((n%26)+65);
+            res.append(a);
+            n/=26;
+            }
+        return res.reverse().toString();
+    }
+}
